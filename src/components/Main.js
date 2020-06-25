@@ -33,36 +33,32 @@ class Main extends React.Component {
             <img src={pic01} alt="" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            Une odeur, un goût réveille en chacun de nous un souvenir d’enfance.<br/>
+            C’est avec mes gâteaux à la broche cuits au feu de bois   et mes biscuits revisités que j’essaie de vous raconter une histoire…<br/>
+
+            Mes gateaux sont fabriqués à partir de produits naturels et authentiques, issus le plus possible du secteur local.
+            Ce sont ces ingrédients de qualités alliés à cette fabrication artisanale qui garantissent une saveur incomparable.
+
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            Fabrication maison sans conservateur<br/>
+            Production locale<br/>
+            Entreprise respectueuse de l’environnement<br/>
+
+            <span className="lgp">La Gourmandise de Paul</span> est labéllisée par la <a href={'https://www.cm-toulouse.fr/'} target={'_blank'}>Chambre des Métiers et de l’Artisanat</a> et le <a href={'http://www.payslauragais.com/'} target={'_blank'}>PETR</a> du pays Lauraguais
+
           </p>
           {close}
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="allproducts"
+          className={`${this.props.article === 'allproducts' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Nos Produits</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
@@ -117,7 +113,7 @@ class Main extends React.Component {
           <h2 className="major">Contact</h2>
           <form method="post" action="#">
             <div className="field half first">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Nom</label>
               <input type="text" name="name" id="name" />
             </div>
             <div className="field half">
@@ -130,10 +126,10 @@ class Main extends React.Component {
             </div>
             <ul className="actions">
               <li>
-                <input type="submit" value="Send Message" className="special" />
+                <input type="submit" value="Envoyer le Message" className="special" />
               </li>
               <li>
-                <input type="reset" value="Reset" />
+                <input type="reset" value="Réinitialiser" />
               </li>
             </ul>
           </form>
